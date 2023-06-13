@@ -5,6 +5,9 @@
 import streamlit as st
 import speech_recognition as sr
 
+# Update pip
+pip install --upgrade pip
+
 def speech_to_text(audio_file):
     r = sr.Recognizer()
     with sr.AudioFile(audio_file) as source:
